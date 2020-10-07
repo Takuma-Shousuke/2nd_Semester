@@ -1,2 +1,2 @@
-# 2nd_Semster
+# 2nd_Semester
 2020年度後期ゲームプログラミング授業用
