@@ -1,11 +1,12 @@
-﻿#include<stdlib.h>
+﻿
+#include<stdlib.h>
 #include<stdio.h>
 
 class Fighter
 {
 public:
 	Fighter();
-	~Fighter();
+		~Fighter();
 
 	int m_hp;
 	int m_tec;
@@ -30,6 +31,10 @@ Fighter::Fighter()
 	m_def = 0;
 }
 
+Fighter::~Fighter()
+{
+}
+
 int main()
 {
 	Fighter fighter;
@@ -37,13 +42,13 @@ int main()
 	// fighter内の各変数をprintfで出力する
 
 		printf("ファイターのHPは%dです\n" ,fighter.m_hp );
-		printf("ファイターのHPは%dです\n", fighter.m_tec);
-		printf("ファイターのHPは%dです\n", fighter.m_luc);
-		printf("ファイターのHPは%dです\n", fighter.m_str);
-		printf("ファイターのHPは%dです\n", fighter.m_spd);
-		printf("ファイターのHPは%dです\n", fighter.m_mde);
-		printf("ファイターのHPは%dです\n", fighter.m_mag);
-		printf("ファイターのHPは%dです\n", fighter.m_def);
+		printf("ファイターのTECは%dです\n", fighter.m_tec);
+		printf("ファイターのLUCは%dです\n", fighter.m_luc);
+		printf("ファイターのSTRは%dです\n", fighter.m_str);
+		printf("ファイターのSPDは%dです\n", fighter.m_spd);
+		printf("ファイターのMDEは%dです\n", fighter.m_mde);
+		printf("ファイターのMAGは%dです\n", fighter.m_mag);
+		printf("ファイターのDEFは%dです\n", fighter.m_def);
 
 	system("pause");
 	return 0;
